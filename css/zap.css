@@ -11,3 +11,60 @@
     font-weight: 900;
     font-style: normal;
 }
+
+/* Colors
+Light Blue: #01baef
+Green: #0cbaba
+Dark Blue: #41658a 
+*/
+
+/* Background */
+body{
+  background-color: #fcfcfc;
+}
+
+/* Navbar */
+
+nav{
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px); 
+}
+
+
+.navbar .nav-link{
+  font-size:larger;
+  color: #41658a;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navbar .nav-link:hover{
+  color: #01baef;
+}
+
+.navbar .nav-link.active{
+  color: #01baef;
+  /* text-decoration: underline; */
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar i{
+  color: white;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar button{
+  background-color: #41658a;
+  border-color: #41658a;
+  max-width: 150px;
+}
+
+.navbar button:hover{
+  background-color: #01baef;
+  border-color: #01baef; 
+}
