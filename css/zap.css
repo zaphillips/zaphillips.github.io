@@ -359,6 +359,11 @@ nav{
 }
 
 /* Contact Page */
+.navbar button.contact{
+  background-color: var(--primarylight);
+  border-color: var(--header);
+}
+
 .container.section.contact{
   background: var(--header);
   border-radius: 25px 25px 25px 25px;
@@ -370,4 +375,14 @@ nav{
 
 .container.section.contact input{
   margin-bottom: 10px;
+}
+
+.container.section.contact textarea{
+  resize: none;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.container.section.contact input[type=clear]{
+  color: brown;
 }
