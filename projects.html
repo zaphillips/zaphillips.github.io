@@ -72,39 +72,51 @@
         <h1>Projects</h1>
       </div>
       <div class="row">
-        <div class="col-4 d-flex justify-content-center">
+        <div class="col-sm-3 d-flex justify-content-center">
           <div class="card" style="width: 18rem;">
             <img src="images/chatgptwebsite.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">ChatGPT Website</h5>
               <p class="card-text">A simple website built with Bootstrap, providing a brief explanation of ChatGPT.</p>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">
+              <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project1Modal">
                 See More
               </button>              
             </div>
           </div>
         </div>
-        <div class="col-4 d-flex justify-content-center">
+        <div class="col-sm-3 d-flex justify-content-center">
           <div class="card" style="width: 18rem;">
             <img src="images/sagagamingwebsite.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Gaming E-Commerce Website</h5>
               <p class="card-text">A gaming focused e-commerce website that has a simple account system and admin dashboard.</p>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">
+              <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project2Modal">
                 See More
               </button>              
             </div>
           </div>
         </div>
-        <div class="col-4 d-flex justify-content-center">
+        <div class="col-sm-3 d-flex justify-content-center">
           <div class="card" style="width: 18rem;">
-            <img src="images/chatgptwebsite.png" class="card-img-top" alt="...">
+            <img src="images/nflpositionml.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">ChatGPT Website</h5>
-              <p class="card-text">A simple website built with Bootstrap, providing a brief explanation of ChatGPT.</p>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">
+              <h5 class="card-title">Analyzing NFL Positions with Unsupervised Machine Learning</h5>
+              <p class="card-text">This project uses unsupervised machine learning to predict NFL offensive positions based on receiving stats from 2014 to 2023.</p>
+              <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project3Modal">
                 See More
               </button>              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="images/personalwebsite.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Personal Website</h5>
+              <p class="card-text">A personal website (the one you are on right now!) built with Bootstrap for FAS376 Art & Design for The Web.</p>
+              <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project4Modal">
+                See More
+              </button>           
             </div>
           </div>
         </div>
@@ -115,7 +127,7 @@
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">ChatGPT Website</h1>
+            <h1 class="modal-title fs-5" id="project1ModalLabel">ChatGPT Website</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -133,7 +145,7 @@
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Gaming E-Commerce Website</h1>
+            <h1 class="modal-title fs-5" id="project2ModalLabel">Gaming E-Commerce Website</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -151,11 +163,40 @@
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Gaming E-Commerce Website</h1>
+            <h1 class="modal-title fs-5" id="project3ModalLabel">Analyzing NFL Positions with Unsupervised Machine Learning</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            This website was created for CS101 Digital Literacy. All content on the website is generated by ChatGPT, with the purpose of the website being an exercise in HTML and CSS rather than the content itself.
+            Using unsupervised machine learning, this project sought out to answer the following questions:
+            <ol>
+              <li>
+                Through unsupervised Machine Learning, we hope to determine the accuracy of our model for determining whether a player in the NFL over the last ten years (2014 - 2023) was a Wide Receiver, Running Back, Fullback, or a Tight End. Our model will focus exclusively on a player’s receiving stats including the total number of receptions, total receiving yards, average yards per reception, and the longest reception that each player had in the NFL in that same time frame. Any players with excellent receiving stats that the model misclassifies as another position group are those that teams ought to pursue as they have consistently outperformed expectations for their respective position group.
+              </li>
+              <li>
+                Through unsupervised Machine Learning, we hope to identify clusters in the data that indicate which players, regardless of their listed position, are most similar to one another from a receiving standpoint.
+              </li>
+              <li>
+                Through unsupervised Machine Learning, we hope to be able to more accurately identify different sub and hybrid positions of all receiving players regardless of their current official NFL position. For example, based on the clusters we derive in Question 2 above, we hope to identify whether players in a certain cluster more closely align with being a boundary or a slot Wide Receiver as opposed to simply being known as a “Wide Receiver” because there is currently no official distinction between the different types of players who play the same position.
+              </li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary"><a href="https://github.com/zaphillips/CS345-Final-Project" target="_blank">Github Repo</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project4Modal" tabindex="-1" aria-labelledby="project4ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="project4ModalLabel">Personal Website</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            This website was created for FAS376 Art & Design for The Web. It is a static website built on the Bootstrap framework. This website is intended to briefly summarize my career path so far, and details how I got to this point.
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
