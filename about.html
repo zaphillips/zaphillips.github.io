@@ -10,22 +10,95 @@
 
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
         <!-- Additional CSS Files -->
-        <link rel="stylesheet" href="assets/css/fontawesome.css">
-
+        <link href="css/zap.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&family=Heebo:wght@100..900&display=swap" rel="stylesheet">
     </head>
   <body>
     <header>
-
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Z Logo">
+              </a>
+              <button 
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navCollapse"
+              class="navbar-toggler ms-auto"  
+              aria-controls="navCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              >
+                <i class="bi bi-list"></i>
+              </button>
+          <div class="collapse navbar-collapse" id="navCollapse">
+              <div class="navbar-nav heebo">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                <a class="nav-link" href="education.html">Education</a>
+                <a class="nav-link" href="experience.html">Experience</a>
+                <a class="nav-link" href="projects.html">Projects</a>
+              </div>
+            <div class="navbar-nav ms-auto">
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary">
+                  <a href="https://www.linkedin.com/in/zachary-a-phillips/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </button>
+                <button type="button" class="btn btn-outline-primary">
+                  <a href="https://github.com/zaphillips" target="_blank">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </button>
+                <button type="button" class="btn btn-primary heebo">
+                  <a href="contact.html">Contact</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <footer>
-
-    </footer>
+    <div class="container section about">
+      <div class="row justify-content-center">
+        <div class="col-8 d-flex justify-content-center">
+          <h1>About Me</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 justify-content-center">
+          <img class="float-start imgshadow" src="images/portrait-zap.png">
+          <div>
+            <p>
+              Hello! My name is Zachary Phillips. I am an undergraduate Computer Science student at <a href="https://www.anselm.edu" target="_blank">Saint Anselm College</a> in Manchester, New Hampshire. I am 22 years old, and I have a passion for technology, sports, and fitness. I am originally from Massachusetts, where I will be living after I graduate from college in May 2024. I am an only child, and I have two cats. My other hobbies include spending time with family and friends, working in my yard, playing video games, and doing random projects around the house. I especially enjoy working out and watching the <a href="https://www.patriots.com" target="_blank">New England Patriots</a>, the greatest football team in the history of the NFL.  
+            </p>
+            <p>
+              My interest in technology started when my Dad bought me a Nintendo Wii for my 7th birthday. Until then, I had limited interaction with video games, playing them only at my friends' houses. After the Wii, I couldn’t get enough of technology, specifically video games. After the Wii, I played various other systems, including the Xbox 360, Wii U, and Xbox One S. My love for gaming eventually brought me to the PC, which began on my Mom’s laptop running Windows XP. This eventually resulted in me getting my own laptop, which greatly improved my digital literacy and fluency with computers. Modding video games on the computer helped me better understand the filesystem and other more complex concepts. Eventually, I started researching how to build my computer, which improved my PC hardware knowledge. 
+            </p>
+            <p>
+              Even though I had a clear interest in computers and technology, I still was not sure if it would become part of my career path. I had always wanted to get into coding, but I didn’t end up exploring that possibility until the first semester of my senior year of high school. My first introduction to coding was in the language C++, with a teacher who had never taught coding before. Unfortunately, that experience wasn’t very good, so I didn’t end up continuing with coding in the second semester of my senior year. When it came time to choose my major for college, my first experience with coding made me apprehensive to choose Computer Science. Luckily, I gave it another try, and it turned out to be one of the best decisions I have ever made. This Spring, I will graduate with a Bachelor of Arts in Computer Science.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- Scripts -->
   <script src="bootstrap/js/bootstrap.min.js"></script>
-
   </body>
+
+  <div class="container footer">
+    <footer class="py-3 mx-auto justify-content-center">
+      <p class="text-center text-muted border-top">© 2024 Zachary Phillips</p>
+    </footer>
+  </div>
+
 </html>

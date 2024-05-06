@@ -23,7 +23,7 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="#top">
                 <img src="images/logo.png" alt="Z Logo">
               </a>
               <button 
@@ -57,7 +57,9 @@
                     <i class="bi bi-github"></i>
                   </a>
                 </button>
-                <button type="button" class="btn btn-primary heebo">Contact</button>
+                <button type="button" class="btn btn-primary heebo">
+                  <a href="contact.html">Contact</a>
+                </button>
               </div>
             </div>
           </div>
@@ -65,15 +67,29 @@
       </nav>
     </header>
 
-    <div class="section">
-      <img src="images/web-banner-zap-nobackground.png">
+    <div class="container section home">
+      <div class="row">
+          <div class="col-12">
+            <img src="images/web-banner-zap-nobackground.png">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <button type="button" class="btn btn-primary heebo">
+              <a href="about.html">Learn More</a>
+            </button>
+          </div>
+      </div>
     </div>
-
-    <footer>
-
-    </footer>
 
   <!-- Scripts -->
   <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
+
+  <div class="container footer">
+    <footer class="py-3 mx-auto justify-content-center">
+      <p class="text-center text-muted border-top">© 2024 Zachary Phillips</p>
+    </footer>
+  </div>
+
 </html>

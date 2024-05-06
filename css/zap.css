@@ -12,39 +12,73 @@
     font-style: normal;
 }
 
-/* Colors
-Light Blue: #01baef
-Green: #0cbaba
-Dark Blue: #41658a 
-*/
+/*Colors*/
+:root{
+  --header: rgba(255, 255, 255, 0.4); /*Glass-Effect on Dark Green*/
+  --primary: #41658a; /*Blue*/
+  --primarylight: #01baef; /*Light Blue*/
+  --secondary: #0a9595; /*Green*/
+  --secondarylight: #0cbaba; /*Light Green*/
+}
 
-/* Background */
+
+/* Page Setup */
 body{
   background-color: #f5f2f2;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  min-height: 50px;
+}
+
+.container.section {
+  margin-top: 100px;
+  flex: 1;
+}
+
+h1 {
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: var(--primary);
+  padding-bottom: 40px;
+}
+
+h2 {
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: var(--primary);
 }
 
 /* Navbar */
 
 nav{
-  background: rgba(255, 255, 255, 0.4);
+  background: var(--header);
   backdrop-filter: blur(10px); 
+  border-radius: 0px 0px 25px 25px;
 }
 
 
 .navbar .nav-link{
   font-size:larger;
-  color: #41658a;
+  color: var(--primary);
   margin-left: 15px;
   margin-right: 15px;
 }
 
 .navbar .nav-link:hover{
-  color: #01baef;
+  color: var(--primarylight);
 }
 
 .navbar .nav-link.active{
-  color: #01baef;
-  /* text-decoration: underline; */
+  color: var(--primarylight);
 }
 
 .navbar-brand img {
@@ -59,12 +93,160 @@ nav{
 }
 
 .navbar button{
-  background-color: #41658a;
-  border-color: #41658a;
+  background-color: var(--primary);
+  border-color: var(--header);
   max-width: 150px;
+  border-width:2px;
 }
 
 .navbar button:hover{
-  background-color: #01baef;
-  border-color: #01baef; 
+  background-color: var(--primarylight);
+  border-color: var(--primarylight); 
+}
+
+.navbar button a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Footer */
+.container.footer{
+  margin-bottom: 0px;
+  background: var(--header);
+  backdrop-filter: blur(10px); 
+  border-radius: 25px 25px 0px 0px;
+  min-height:50px;
+  min-width: 100%;
+}
+
+.container footer{
+  width: 75%;
+}
+
+/* Homepage */
+.container.section.home img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container.section.home .row {
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.container.section.home button{
+  background-color: #0a9595;
+  border-color: #0a9595;
+  font-size: larger;
+  min-width: 15%;
+}
+
+.container.section.home button:hover{
+  background-color: #0cbaba;
+  border-color: #0cbaba; 
+}
+
+.container.section.home button a{
+  color: white;
+  text-decoration: none;
+}
+
+/* About page */
+.container.section.about{
+  background: var(--header);
+  border-radius: 25px 25px 25px 25px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.container.section.about img{
+  object-fit: cover;
+  border-radius: 25px 25px 25px 25px;
+  max-height:65%;
+  max-width:50%;
+  margin-right: 30px;
+}
+
+.container.section.about p{
+  font-family: "Biryani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: fit-content;
+  font-size: large;
+  text-align: justify;
+  color: black;
+}
+
+.container.section.about p a{
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+/* Education page */
+.container.section.education{
+  background: var(--header);
+  border-radius: 25px 25px 25px 25px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.container.section.education img{
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 25px 25px 25px 25px;
+  max-height:100%;
+  max-width:100%;
+  margin-bottom:30px;
+}
+
+.container.section.education p{
+  font-family: "Biryani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: fit-content;
+  font-size: large;
+  text-align: justify;
+  color: black;
+}
+
+.container.section.education p a{
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+/* Experience page */
+.container.section.experience .job{
+  background: var(--header);
+  border-radius: 25px 25px 25px 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.container.section.experience img{
+  object-fit: cover;
+  max-height:100%;
+  max-width:75%;
+}
+
+.container.section.experience li{
+  font-family: "Biryani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: fit-content;
+  font-size: large;
+  text-align: justify;
+  color: black;
+}
+
+.container.section.experience p a{
+  color: var(--secondary);
+  text-decoration: none;
 }

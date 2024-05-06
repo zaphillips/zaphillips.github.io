@@ -10,22 +10,107 @@
 
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
         <!-- Additional CSS Files -->
-        <link rel="stylesheet" href="assets/css/fontawesome.css">
-
+        <link href="css/zap.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&family=Heebo:wght@100..900&display=swap" rel="stylesheet">
     </head>
   <body>
     <header>
-
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Z Logo">
+              </a>
+              <button 
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navCollapse"
+              class="navbar-toggler ms-auto"  
+              aria-controls="navCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              >
+                <i class="bi bi-list"></i>
+              </button>
+          <div class="collapse navbar-collapse" id="navCollapse">
+              <div class="navbar-nav heebo">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link active" aria-current="page" href="education.html">Education</a>
+                <a class="nav-link" href="experience.html">Experience</a>
+                <a class="nav-link" href="projects.html">Projects</a>
+              </div>
+            <div class="navbar-nav ms-auto">
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary">
+                  <a href="https://www.linkedin.com/in/zachary-a-phillips/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </button>
+                <button type="button" class="btn btn-outline-primary">
+                  <a href="https://github.com/zaphillips" target="_blank">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </button>
+                <button type="button" class="btn btn-primary heebo">
+                  <a href="contact.html">Contact</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <footer>
+    <div class="container section education">
+      <div class="row justify-content-center">
+        <div class="col-8 d-flex justify-content-center">
+          <h1>Education</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <img class="imgshadow" src="images/saintanselm.png">
+          <div>
+            <h2>Saint Anselm College</h2>
+          </div>
+          <div>
+            <p>
+              "Saint Anselm College was founded in 1889 by the Benedictine monks of St. Mary's Abbey of Newark, New Jersey, in response to the invitation by Bishop Denis M. Bradley, the first bishop of Manchester, N.H. A six-year classical course, with curricula in philosophical and theological studies, was organized and opened to qualified students.
 
-    </footer>
+              In 1895, the General Court of the State of New Hampshire empowered Saint Anselm to grant standard academic degrees. From its beginning, the college has been, and desires to remain, a small private non-profit college dedicated to delivering a first-rate, liberal arts education.
+
+              We're proud to be preserving a tradition framed in academic excellence that has distinguished the Benedictine Order for more than 15 centuries." - <a href="https://www.anselm.edu/about/history-mission" target="_blank">Saint Anselm College Website</a>
+            </p>
+          </div>
+          <div>
+            <h2>My Experience at Saint A's</h2>
+          </div>
+          <div>
+            <p>
+              I spent my entire undergraduate career at Saint Anselm College. I majored in Computer Science, with minors in Data Analytics and Web Design. My freshman year at Saint A’s began in August 2020, and it felt like my life as I knew it was over and an entirely new life was beginning. Unfortunately, due to the circumstances caused by the pandemic, freshman year was a shadow of what college life was supposed to be. I had always heard that college was supposed to be the best time of your life. Freshman year was not that. Instead, it came with all the challenges that normally come with college (and more), but without any of the joys. Luckily, there was one positive aspect of freshman year. Freshman year finally confirmed, in my mind, that Computer Science was right for me, and that it would become my career path.
+            </p>
+            <p>
+              Sophomore year was difficult, but it started the journey back to collegiate normalcy. As time passed, I began feeling more comfortable at Saint A’s. Instead of counting the days until the next break, I found myself enjoying time with my friends, dedicating myself to the gym and my studies, and developing into a more confident and mature version of myself. Now, (at the time of writing this) having almost completed my undergraduate degree, I wonder where the last few years have gone.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- Scripts -->
   <script src="bootstrap/js/bootstrap.min.js"></script>
-
   </body>
+
+  <div class="container footer">
+    <footer class="py-3 mx-auto justify-content-center">
+      <p class="text-center text-muted border-top">© 2024 Zachary Phillips</p>
+    </footer>
+  </div>
+
 </html>
