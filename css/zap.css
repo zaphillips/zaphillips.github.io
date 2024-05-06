@@ -231,9 +231,13 @@ nav{
 }
 
 .container.section.experience img{
+  display: flex;
+  vertical-align: middle;
   object-fit: cover;
-  max-height:100%;
-  max-width:75%;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  padding:75px 0;
 }
 
 .container.section.experience li{
@@ -249,4 +253,110 @@ nav{
 .container.section.experience p a{
   color: var(--secondary);
   text-decoration: none;
+}
+
+/* Projects page */
+.container.section.projects .card-body{
+  background-color: var(--header);
+}
+
+.container.section.projects img{
+  
+}
+
+.container.section.experience li{
+  
+}
+
+.container.section.projects .card-title{
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: var(--primary);
+}
+
+.container.section.projects p{
+  font-family: "Biryani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: fit-content;
+  font-size: large;
+  color: black;
+}
+
+.container.section.projects button{
+  background-color: #0a9595;
+  border-color: #0a9595;
+  font-size: larger;
+  min-width: 15%;
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.container.section.projects button:hover{
+  background-color: #0cbaba;
+  border-color: #0cbaba; 
+}
+
+.modal{
+  background-color: var(--header);
+}
+
+.container.section.projects img{
+  
+}
+
+.container.section.experience li{
+  
+}
+
+.modal .modal-title{
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: var(--primary);
+}
+
+.modal .modal-content .modal-body{
+  font-family: "Biryani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: fit-content;
+  font-size: large;
+  text-align: justify;
+  color: black;
+}
+
+.modal .modal-content .modal-footer button.btn.btn-primary{
+  background-color: #0a9595;
+  border-color: #0a9595;
+  font-size: larger;
+  min-width: 15%;
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.modal .modal-content .modal-footer button.btn.btn-primary:hover{
+  background-color: #0cbaba;
+  border-color: #0cbaba; 
+}
+
+.modal .modal-content .modal-footer button.btn.btn-secondary{
+  font-size: larger;
+  min-width: 15%;
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.modal .modal-content .modal-footer button.btn.btn-primary a{
+  text-decoration: none;
+  color: white;
 }
