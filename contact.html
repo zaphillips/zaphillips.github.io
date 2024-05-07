@@ -73,36 +73,33 @@
           <h1>Contact</h1>
         </div>
       </div>
-      <form>
+      <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+        <input type="hidden" name="access_key" value="878755e6-327f-4ee4-923d-310bd1ad82c6">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         <div class="row justify-content-center">
-          <div class="col-2 d-flex justify-content-center">
-            <input type="text" class="form-control" id="fname" placeholder="First Name">
-          </div>
-          <div class="col-2 d-flex justify-content-center">
-            <input type="text" class="form-control" id="lname" placeholder="Last Name">
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-4 d-flex justify-content-center">
-            <input type="email" class="form-control" id="email" placeholder="Email Address">
+          <div class="col-4 justify-content-center">
+            <input type="text" class="form-control" name="name" placeholder="Full Name" required>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-4 d-flex justify-content-center">
-            <input type="text" class="form-control" id="subject" placeholder="Subject">
+            <input type="email" class="form-control" name="email" placeholder="Email Address" required>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-4 justify-content-center">
-            <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+            <textarea class="form-control" name="message" rows="3" placeholder="Message" required></textarea>
           </div>
         </div>
         <div class="row justify-content-center">
+          <div class="col-4 h-captcha d-flex justify-content-center" data-captcha="true" required></div>
+        </div>
+        <div class="row justify-content-center">
           <div class="col-1 d-flex justify-content-end">
-            <input type="clear" class="form-control" id="clear" placeholder="Clear">
+            <input type="reset" class="form-control btn btn-secondary" id="clear" value="Clear">
           </div>
           <div class="col-1 d-flex justify-content-start">
-            <input type="submit" class="form-control" id="submit" placeholder="Submit">
+            <button class="btn btn-primary" type="submit">Submit</button>
           </div>
         </div>
       </form>
@@ -110,6 +107,8 @@
 
   <!-- Scripts -->
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+  <script src="javascript/form.js"></script>
   </body>
 
   <div class="container footer">
